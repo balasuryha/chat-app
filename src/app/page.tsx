@@ -33,6 +33,9 @@ export default function Home() {
       <h1 className="text-3xl font-bold mb-4 text-center">💬 Chat with Mistral</h1>
       <ChatBox messages={messages} loading={loading} />
       <ChatInput onSend={handleSend} disabled={loading} />
+      <footer className="mt-4 text-center text-sm text-gray-500">
+        Developed by <span className="font-semibold">Balasuryha Lavakumar</span> ✨
+      </footer>
     </main>
   );
 }
