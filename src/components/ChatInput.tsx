@@ -1,30 +1,3 @@
-// "use client";
-// import React, { useState } from "react";
-
-// export default function ChatInput({ onSend }: { onSend: (msg: string) => void }) {
-//   const [input, setInput] = useState("");
-
-//   return (
-//     <form
-//       onSubmit={(e) => {
-//         e.preventDefault();
-//         if (!input.trim()) return;
-//         onSend(input);
-//         setInput("");
-//       }}
-//       className="flex mt-2"
-//     >
-//       <input
-//         className="flex-1 border p-2 rounded-l-lg"
-//         value={input}
-//         onChange={(e) => setInput(e.target.value)}
-//         placeholder="Type a message..."
-//       />
-//       <button className="bg-blue-500 text-white px-4 rounded-r-lg">Send</button>
-//     </form>
-//   );
-// }
-
 "use client";
 import React, { useState } from "react";
 

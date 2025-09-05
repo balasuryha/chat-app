@@ -1,25 +1,3 @@
-// "use client";
-// import React from "react";
-
-// type Message = { role: "user" | "bot"; text: string };
-
-// export default function ChatBox({ messages }: { messages: Message[] }) {
-//   return (
-//     <div className="p-4 h-96 overflow-y-auto border rounded-lg bg-white">
-//       {messages.map((m, i) => (
-//         <div
-//           key={i}
-//           className={`my-2 ${
-//             m.role === "user" ? "text-blue-600" : "text-green-600"
-//           }`}
-//         >
-//           <strong>{m.role}:</strong> {m.text}
-//         </div>
-//       ))}
-//     </div>
-//   );
-// }
-
 "use client";
 import React, { useEffect, useRef } from "react";
 

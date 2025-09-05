@@ -1,39 +1,7 @@
-// "use client";
-// import { useState } from "react";
-// import ChatBox from "../components/ChatBox";
-// import ChatInput from "../components/ChatInput";
-
-// type Message = { role: "user" | "bot"; text: string };
-
-// export default function Home() {
-//   const [messages, setMessages] = useState<Message[]>([]);
-
-//   async function handleSend(msg: string) {
-//     setMessages((prev) => [...prev, { role: "user", text: msg }]);
-
-//     const res = await fetch("/api/chat", {
-//       method: "POST",
-//       headers: { "Content-Type": "application/json" },
-//       body: JSON.stringify({ message: msg }),
-//     });
-
-//     const data = await res.json();
-//     setMessages((prev) => [...prev, { role: "bot", text: data.reply }]);
-//   }
-
-//   return (
-//     <main className="max-w-md mx-auto p-6">
-//       <h1 className="text-2xl font-bold mb-4">Chat App</h1>
-//       <ChatBox messages={messages} />
-//       <ChatInput onSend={handleSend} />
-//     </main>
-//   );
-// }
-
 "use client";
 import { useState } from "react";
-import ChatBox from "../components/ChatBox";
-import ChatInput from "../components/ChatInput";
+import ChatBox from "components/ChatBox";
+import ChatInput from "components/ChatInput";
 
 type Message = { role: "user" | "bot"; text: string };
 
