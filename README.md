@@ -41,8 +41,8 @@ MISTRAL_API_KEY=your_mistral_api_key
 npm run dev
 ```
 
-Open in your browser
+- Open in your browser
 
 ```bash
-http:localhost:3000
+http://localhost:3000
 ```
